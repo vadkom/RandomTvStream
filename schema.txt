@@ -1,0 +1,13 @@
+ 
+random-youtube-streamer/
+├─ config/
+│  ├─ playlist_url.txt        # URL to a .m3u (default: iptv-org general.m3u)
+│  └─ youtube_rtmp.txt        # Your YouTube RTMP URL (rtmp://.../live2/KEY)
+├─ buffer/                    # Clips & FIFO created at runtime
+├─ src/
+│  ├─ streamer.py             # Orchestrator (run this)
+│  ├─ playlist.py             # Fetch/refresh .m3u list
+│  ├─ capture.py              # Probe + capture clips
+│  └─ util.py                 # Helpers (logging, shell helpers)
+├─ requirements.txt
+└─ README.md
